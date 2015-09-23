@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+
+ <!-- SUBSTITUA OS VALORES INDICADOS: 
+ http://yourdomain.com/path/to/index.html com o link da Tabela do GoogleSheets, 
+e http://yourdomain.com/path/to/pym.js com o link daquele arquivo pym.js que salvamos no repositório -->
+
+<div id="table-iframe-container"></div>
+  <script src="https://github.com/voltdatalab/cursovolt/blob/master/js/pym.js"></script>
+  <script type="text/javascript">
+  (function() {
+    var pymParent = new pym.Parent(
+      'table-iframe-container',
+      'https://docs.google.com/spreadsheets/d/12TIuxaVN-_nAE6ZrX2lveuIDdx9Xr4zKddV9KAJqAxY/pubhtml', {});
+  }());
+  </script>
+
+
+</body>
+</html>
